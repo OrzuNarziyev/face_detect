@@ -9,11 +9,11 @@ use opencv::{
 
 fn main() -> Result<()> {
     // Load ONNX model files
-    let detector_model = "models/face_detection_yunet_2021dec.onnx";
+    let detector_model = "models/face_detection_yunet_2023mar.onnx";
     let recognizer_model = "models/face_recognition_sface_2021dec.onnx";
 
     // Load known face image and extract feature
-    let known_image = imgcodecs::imread("known_face.jpg", imgcodecs::IMREAD_COLOR)?;
+    let known_image = imgcodecs::imread("train/image1.png", imgcodecs::IMREAD_COLOR)?;
     if known_image.empty() {
         panic!("❌ known_face.jpg not found!");
     }

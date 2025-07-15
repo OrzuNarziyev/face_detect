@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-opencv = { version = "0.94.2", features = ["highgui", "videoio"] }
+opencv = { version = "0.94.2" }
